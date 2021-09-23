@@ -3,8 +3,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(400, 400);
   // put setup code here
+
+  VSCODE
 }
 
 function draw() {
