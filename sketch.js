@@ -1,15 +1,21 @@
 function preload() {
-  // put preload code here
 }
 
 function setup() {
-  createCanvas(400, 400);
-  // put setup code here
-
-  VSCODE
+  createCanvas(windowWidth,windowHeight);
+  angleMode(DEGREES)
+  background("red")
+  frameRate(60)
 }
 
 function draw() {
-  // put drawing code here
-  background("red");
+  translate(width/2,height/2)
+  rotate(frameCount) 
+  noFill()
+  stroke(lerpColor(color("blue"), color("red"), frameCount/700));
+  strokeWeight(0.2)
+  rectMode(CENTER)
+  rect(0,0,frameCount,frameCount)
+  strokeWeight(0.2)
+  rect(0,0,1500-frameCount*2, 1500-frameCount*2)
 }
